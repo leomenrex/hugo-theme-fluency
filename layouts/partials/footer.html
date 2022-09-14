@@ -7,9 +7,7 @@
         <a {{ if hasPrefix $targetURL "http" }}rel="nofollow" target="_blank"{{ end }} href="{{ .URL | relURL }}" title="{{ or .Title .Name }}">{{ .Name }}</a>
       </li>
       {{ end }}
-      <li>
-        <a class="nav-link navbar-button" href="{{ .Site.RSSLink }}" type="application/rss+xml">RSS</a>
-      </li>
+
       <li>
         <a
           rel="nofollow"
@@ -25,7 +23,7 @@
     </ul>
     <div class="copyright">
       {{ with .Site.Params.copyright }}
-        {{ . | safeHTML }} {{ else }} &copy; {{ now.Format "2006"}} {{ .Site.Title }}
+        {{ . | safeHTML }} {{ else }} &copy; {{ .Site.Title }}
       {{ end }}
     </div>
   </div>
