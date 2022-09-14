@@ -22,6 +22,9 @@ other = "阅读更多"
 [readingTime]
 other = "预计阅读 {{ .Count }} 分钟"
 
+[wordcount]
+other = "全文共 {{ .Count }} 字"
+
 [comment]
 other = "评论"
 
