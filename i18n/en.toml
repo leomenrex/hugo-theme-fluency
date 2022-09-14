@@ -23,6 +23,10 @@ other = "READ MORE"
 one = "a min to read"
 other = "{{ .Count }} mins to read"
 
+[wordcount]
+one = "a word"
+other = "total {{ .Count }} words"
+
 [comment]
 other = "comment"
 
